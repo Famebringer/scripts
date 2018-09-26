@@ -11,3 +11,14 @@ f(2)
 def f(x):
     res = x * 2 + 10
     return res
+
+
+
+def som(getal1, getal2, getal3):
+    antwoordt = getal1 + getal2 + getal3
+    print('getal1 is', getal1)
+    print('getal2 is', getal2)
+    print('getal3 is', getal3)
+    print(antwoordt)
+
+som(7,5,4)
