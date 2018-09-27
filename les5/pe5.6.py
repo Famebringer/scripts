@@ -3,12 +3,12 @@
 # Gebruik de volgende string:
 
 s = "Guido van Rossum heeft programmeertaal Python bedacht."
-klinkers = []
+klinkers = ''
 
-for klinker in s:
-    if klinker [0]=='a,e,o,u,i':
-        s.append(klinker)
+for letters in s:
+    if letters in 'aeoui':
+        klinkers += letters
 
-print(s)
+print(klinkers)
 
 
