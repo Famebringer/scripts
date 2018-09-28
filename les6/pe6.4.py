@@ -1,7 +1,16 @@
-oldpassword = 'password'
-def new_password(oldpassword, newpassword):
-    if newpassword == password:
-        print(False)
- new_password = eval(input(' Voer het nieuwe wachtwoord in: '))
 
-new_password(password)
+
+def new_password(oldpassword, newpassword):
+    if oldpassword != newpassword and len(newpassword) >= 6:
+        print("True")
+
+    else:
+        print(" False ")
+
+
+
+
+oldpassword = (input(' Voer het oude wachtwoord in: '))
+newpassword = (input(' Voer het nieuwe wachtwoord in: '))
+
+new_password(oldpassword,newpassword)

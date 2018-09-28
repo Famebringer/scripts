@@ -2,8 +2,15 @@
 #  De return-waarde van de functie moet de som (optelling) van de getallen in de lijst zijn!
  #  Tip: bekijk nog eens de list-functies (Perkovic, blz. 28).
 
-def listsum(list):
-    ret=0
-    for i in list:
-        ret+=i
-    return ret
+
+def som(getallenlijst):
+    res = max (getallenlijst) - min (getallenlijst)
+    return res
+
+print(som([7,9,8,2]))
+
+
+def som(getallenlijst2):
+    res = sum(getallenlijst2)
+    return res
+print(som([1,2,3,4]))
