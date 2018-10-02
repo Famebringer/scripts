@@ -9,4 +9,4 @@ for nummer in range(0,53):
 	else:
 		oneven_nummers.append(nummer)
 
-print(gelijke_nummers)
+print(oneven_nummers)

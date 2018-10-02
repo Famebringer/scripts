@@ -16,15 +16,17 @@ def ritprijs(leeftijd, weekendrit, afstandKM):
     jo_oud = 30
     for a in weekendrit:
         if a == " Ja ":
-            res = res / standaardprijs()
+            res = res / standaardprijs(afstandKM)
             return res
 
 
 
      for a in leeftijd
           elif b <=12 and  >65:
-            jo_oud = jo_oud / standaardprijs()
+            jo_oud = jo_oud / standaardprijs(afstandKM)
             return res
+
+rp= ritprijs(22, " Ja ", 60)
 
 
 
