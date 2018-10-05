@@ -1,32 +1,28 @@
 def standaardprijs(afstandKM):
     res = 0
     vastbedrag = 15
-    for i in afstandKM:
-        if i <50:
-            res = res + i*0.80
-
-        else:
-            print (15 + 0.60 * 15)
+    if afstandKM <50:
+        res = res + afstandKM*0.80
+    else:
+        res = res + 15 + afstandKM*0.60
     return res
 
-# print(standaardprijs([50]))
 
 def ritprijs(leeftijd, weekendrit, afstandKM):
-    res = 35
-    jo_oud = 30
-    for a in weekendrit:
-        if a == " Ja ":
-            res = res / standaardprijs(afstandKM)
-            return res
+
+    if weekendrit == " Ja " and (leeftijd >=65 or leeftijd <=12):
+        return standaardprijs(afstandKM) *0.65
+
+    elif weekendrit == " Ja " and (leeftijd <65 or leeftijd >12):
+        return standaardprijs(afstandKM) *0.60
+    elif weekendrit == " Nee " and (leeftijd >=65 or leeftijd <=12):
+        return standaardprijs(afstandKM) * 0.7
+    else:
+        return standaardprijs(afstandKM)
 
 
-
-     for a in leeftijd
-          elif b <=12 and  >65:
-            jo_oud = jo_oud / standaardprijs(afstandKM)
-            return res
-
-rp= ritprijs(22, " Ja ", 60)
+rp= ritprijs(22, " Nee ", 40)
+print (rp)
 
 
 

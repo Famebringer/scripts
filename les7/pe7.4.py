@@ -1,7 +1,10 @@
 infile = open('kaartnummer.txt', 'r')
-data = infile.read()
-Characters = len(data)
-Words = len(data.split())
+data = infile.readlines() #bestand
+kaartnummers = []
 
-Lines = len(data.splitlines())
-print ("Deze file telt ",Lines, "regels")
+
+for regel in data:
+    kaartnummers.append(int(regel.split(":")[1]))
+
+
+print('het grootste getal is: ' + (max(kaartnummers) +
